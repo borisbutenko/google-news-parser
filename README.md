@@ -19,7 +19,7 @@ Python 3 req.
 ./venv.sh deactivate
 ```
 
-### run app
+### when app is run
 http://127.0.0.1:8000/news/ for scraping <news.google.com> as default
 
 http://127.0.0.1:8000/news/site for scraping ```<site>``` (works only for news.google.com... sry fot it : /)
