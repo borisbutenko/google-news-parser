@@ -13,7 +13,7 @@ Python 3 req.
 ./venv.sh
 
 # runserver
-./manage.py runserve
+./manage.py runserver
 
 # deactivate venv
 ./venv.sh deactivate
