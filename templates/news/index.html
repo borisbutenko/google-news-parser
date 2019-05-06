@@ -1,0 +1,17 @@
+{% if site %}
+  <h1>Scraping for {{ site }}</h1>
+{% endif %}
+
+{% if urls|length != 0 %}
+  <ul>
+    {% for url in urls %}
+      <li>
+        <a href="{{ url.href }}"
+           aria-label="{{ url.name }}"
+           target="_blank">
+          {{ url.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
