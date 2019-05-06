@@ -33,10 +33,11 @@ class Scraper:
         return urls
 
 
-def index(req):
-    news = "https://news.google.com"
-    context = {'urls': Scraper(news).scrape(),
-               'site': news}
+def index(req,
+          site: str = 'news.google.com'):
+    site = "https://" + site
+    context = {'urls': Scraper(site).scrape(),
+               'site': site}
     return render(req,
                   'news/index.html',
                   context)
