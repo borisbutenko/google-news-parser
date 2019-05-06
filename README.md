@@ -1,2 +1,2 @@
 # google-news-parser
-My first scraper
+My first scraper used django
